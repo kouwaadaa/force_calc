@@ -1,7 +1,7 @@
 import para
 import coeff
 
-use_data_num = 300
+use_data_num = 100
 v = 28
 alpha = 4
 wing = 1.5
