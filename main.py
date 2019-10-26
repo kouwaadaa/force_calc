@@ -6,11 +6,11 @@ v = 28
 alpha = 2
 wing = 1.5
 
-# path = './data_file/wing_withhole4/'
+# path = './data_file/wingOnly/wing_withhole4/'
 
-# drag = para.para_calc(path + 'report-file-0.out','Drag',use_data_num)
-# lift = para.para_calc(path + 'report-file-1.out','Lift',use_data_num)
-# moment = para.para_calc(path + 'report-file-2.out','Moment',use_data_num)
+# drag = para.para_calc1(path + 'report-file-0.out','Drag',use_data_num)
+# lift = para.para_calc1(path + 'report-file-1.out','Lift',use_data_num)
+# moment = para.para_calc1(path + 'report-file-2.out','Moment',use_data_num)
 
 # coeff.coeff_calc(drag,lift,moment,v)
 
