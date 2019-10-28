@@ -21,7 +21,7 @@ def para_calc(file_name,force,num,wing,alpha,clm):
 
     book = openpyxl.load_workbook('wing_force.xlsx')
     sheet = book['alpha=' + str(alpha)]
-    if wing == 1:
+    if wing == 1.0:
         if force == 'Drag':
             sheet.cell(row=2,column=clm).value = ave
         if force == 'Lift':
