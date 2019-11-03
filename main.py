@@ -3,7 +3,7 @@ import coeff
 
 use_data_num = 100
 v = 28
-alpha = 10
+alpha = 4
 wing = 1.0
 
 # path = './data_file/wingOnly/wing_withhole4/'
