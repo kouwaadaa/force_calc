@@ -21,20 +21,27 @@ def para_calc(file_name,force,num,wing,alpha,clm):
 
     book = openpyxl.load_workbook('wing_force.xlsx')
     sheet = book['alpha=' + str(alpha)]
-    if wing == 1.0:
-        if force == 'Drag':
-            sheet.cell(row=2,column=clm).value = ave
-        if force == 'Lift':
-            sheet.cell(row=3,column=clm).value = ave
-        if force == 'Moment':
-            sheet.cell(row=4,column=clm).value = ave
+    # if wing == 1.0:
+    #     if force == 'Drag':
+    #         sheet.cell(row=2,column=clm).value = ave
+    #     if force == 'Lift':
+    #         sheet.cell(row=3,column=clm).value = ave
+    #     if force == 'Moment':
+    #         sheet.cell(row=4,column=clm).value = ave
+    # if wing == 1.5:
+    #     if force == 'Drag':
+    #         sheet.cell(row=8,column=clm).value = ave
+    #     if force == 'Lift':
+    #         sheet.cell(row=9,column=clm).value = ave
+    #     if force == 'Moment':
+    #         sheet.cell(row=10,column=clm).value = ave
     if wing == 1.5:
         if force == 'Drag':
-            sheet.cell(row=8,column=clm).value = ave
+            sheet.cell(row=14,column=clm).value = ave
         if force == 'Lift':
-            sheet.cell(row=9,column=clm).value = ave
+            sheet.cell(row=15,column=clm).value = ave
         if force == 'Moment':
-            sheet.cell(row=10,column=clm).value = ave                       
+            sheet.cell(row=16,column=clm).value = ave                       
     book.save('wing_force.xlsx')
 
 

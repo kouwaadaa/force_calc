@@ -4,7 +4,7 @@ import coeff
 use_data_num = 100
 v = 28
 alpha = 4
-wing = 1.0
+wing = 1.5
 
 # path = './data_file/wingOnly/wing_withhole4/'
 
@@ -14,7 +14,7 @@ wing = 1.0
 
 # coeff.coeff_calc(drag,lift,moment,v)
 
-path = './data_file/wing'+ str(wing) +'/alpha' + str(alpha) + '/'
+path = './data_file' + '/hole_original'  + '/wing'+ str(wing) +'/alpha' + str(alpha) + '/'
 
 path_parts = 'body_nose'
 print('%s' % (path_parts))
