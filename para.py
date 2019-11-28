@@ -14,12 +14,12 @@ def para_calc(file_name,force,num,wing,alpha,clm):
             iteration.append(int(data[0]))
             data_num.append(float(data[1]))
 
-    #ave = sum(data_num[-num:])/num
-    ave = sum(data_num[801:900])/num
+    ave = sum(data_num[-num:])/num
+    #ave = sum(data_num[801:900])/num
     print('%s:%f' % (force,ave))
 
     #write excel
-    excel_file = 'remove_tank.xlsx'
+    excel_file = 'wing_force.xlsx'
 
     book = openpyxl.load_workbook(excel_file)
     sheet = book['alpha=' + str(alpha)]

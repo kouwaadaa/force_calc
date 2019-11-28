@@ -1,7 +1,7 @@
 import para
 import coeff
 
-use_data_num = 100
+use_data_num = 30
 v = 28
 alpha = 4
 wing = 1.0
@@ -14,7 +14,7 @@ wing = 1.0
 
 # coeff.coeff_calc(drag,lift,moment,v)
 
-path = './data_file' + '/remove_tank'  + '/wing'+ str(wing) +'/alpha' + str(alpha) + '/'
+path = './data_file' + '/hole_original'  + '/wing'+ str(wing) +'/alpha' + str(alpha) + '/'
 
 path_parts = 'body_nose'
 print('%s' % (path_parts))
@@ -34,17 +34,17 @@ drag = para.para_calc(path + path_parts + '_drag.out','Drag',use_data_num, wing,
 lift = para.para_calc(path + path_parts + '_lift.out','Lift',use_data_num, wing, alpha,4)
 moment = para.para_calc(path + path_parts + '_moment.out','Moment',use_data_num, wing, alpha,4)
 
-# path_parts = 'left_tank'
-# print('%s' % (path_parts))
-# drag = para.para_calc(path + path_parts + '_drag.out','Drag',use_data_num, wing, alpha,5)
-# lift = para.para_calc(path + path_parts + '_lift.out','Lift',use_data_num, wing, alpha,5)
-# moment = para.para_calc(path + path_parts + '_moment.out','Moment',use_data_num, wing, alpha,5)
+path_parts = 'left_tank'
+print('%s' % (path_parts))
+drag = para.para_calc(path + path_parts + '_drag.out','Drag',use_data_num, wing, alpha,5)
+lift = para.para_calc(path + path_parts + '_lift.out','Lift',use_data_num, wing, alpha,5)
+moment = para.para_calc(path + path_parts + '_moment.out','Moment',use_data_num, wing, alpha,5)
 
-# path_parts = 'right_tank'
-# print('%s' % (path_parts))
-# drag = para.para_calc(path + path_parts + '_drag.out','Drag',use_data_num, wing, alpha,6)
-# lift = para.para_calc(path + path_parts + '_lift.out','Lift',use_data_num, wing, alpha,6)
-# moment = para.para_calc(path + path_parts + '_moment.out','Moment',use_data_num, wing, alpha,6)
+path_parts = 'right_tank'
+print('%s' % (path_parts))
+drag = para.para_calc(path + path_parts + '_drag.out','Drag',use_data_num, wing, alpha,6)
+lift = para.para_calc(path + path_parts + '_lift.out','Lift',use_data_num, wing, alpha,6)
+moment = para.para_calc(path + path_parts + '_moment.out','Moment',use_data_num, wing, alpha,6)
 
 path_parts = 'left_leg'
 print('%s' % (path_parts))
@@ -88,14 +88,14 @@ drag = para.para_calc(path + path_parts + '_drag.out','Drag',use_data_num, wing,
 lift = para.para_calc(path + path_parts + '_lift.out','Lift',use_data_num, wing, alpha,13)
 moment = para.para_calc(path + path_parts + '_moment.out','Moment',use_data_num, wing, alpha,13)
 
-# path_parts = 'left_wing_tank_connect'
-# print('%s' % (path_parts))
-# drag = para.para_calc(path + path_parts + '_drag.out','Drag',use_data_num, wing, alpha,14)
-# lift = para.para_calc(path + path_parts + '_lift.out','Lift',use_data_num, wing, alpha,14)
-# moment = para.para_calc(path + path_parts + '_moment.out','Moment',use_data_num, wing, alpha,14)
+path_parts = 'left_wing_tank_connect'
+print('%s' % (path_parts))
+drag = para.para_calc(path + path_parts + '_drag.out','Drag',use_data_num, wing, alpha,14)
+lift = para.para_calc(path + path_parts + '_lift.out','Lift',use_data_num, wing, alpha,14)
+moment = para.para_calc(path + path_parts + '_moment.out','Moment',use_data_num, wing, alpha,14)
 
-# path_parts = 'right_wing_tank_connect'
-# print('%s' % (path_parts))
-# drag = para.para_calc(path + path_parts + '_drag.out','Drag',use_data_num, wing, alpha,15)
-# lift = para.para_calc(path + path_parts + '_lift.out','Lift',use_data_num, wing, alpha,15)
-# moment = para.para_calc(path + path_parts + '_moment.out','Moment',use_data_num, wing, alpha,15)
+path_parts = 'right_wing_tank_connect'
+print('%s' % (path_parts))
+drag = para.para_calc(path + path_parts + '_drag.out','Drag',use_data_num, wing, alpha,15)
+lift = para.para_calc(path + path_parts + '_lift.out','Lift',use_data_num, wing, alpha,15)
+moment = para.para_calc(path + path_parts + '_moment.out','Moment',use_data_num, wing, alpha,15)
