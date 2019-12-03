@@ -44,13 +44,12 @@ def para_calc(file_name,force,num,wing,alpha,clm):
     #         sheet.cell(row=15,column=clm).value = ave
     #     if force == 'Moment':
     #         sheet.cell(row=16,column=clm).value = ave 
-    if wing == 1.0:
-        if force == 'Drag':
-            sheet.cell(row=14,column=clm).value = ave
-        if force == 'Lift':
-            sheet.cell(row=15,column=clm).value = ave
-        if force == 'Moment':
-            sheet.cell(row=16,column=clm).value = ave                      
+    if force == 'Drag':
+        sheet.cell(row=14,column=clm).value = ave
+    if force == 'Lift':
+        sheet.cell(row=15,column=clm).value = ave
+    if force == 'Moment':
+        sheet.cell(row=16,column=clm).value = ave                      
     book.save(excel_file)
 
 

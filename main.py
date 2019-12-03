@@ -1,10 +1,10 @@
 import para
 import coeff
 
-use_data_num = 30
+use_data_num = 50
 v = 28
-alpha = 4
-wing = 1.0
+alpha = 8
+wing = 1.5
 
 # path = './data_file/wingOnly/wing_withhole4/'
 
@@ -14,7 +14,7 @@ wing = 1.0
 
 # coeff.coeff_calc(drag,lift,moment,v)
 
-path = './data_file' + '/hole_original'  + '/wing'+ str(wing) +'/alpha' + str(alpha) + '/'
+path = './data_file' + '/hole_original'  + '/wing'+ str(wing) +'/alpha' + str(alpha) + 'simple/'
 
 path_parts = 'body_nose'
 print('%s' % (path_parts))
