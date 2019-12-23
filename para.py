@@ -19,7 +19,7 @@ def para_calc(file_name,force,num,wing,alpha,clm):
     print('%s:%f' % (force,ave))
 
     #write excel
-    excel_file = 'wing_force.xlsx'
+    excel_file = 'remove_tank.xlsx'
 
     book = openpyxl.load_workbook(excel_file)
     sheet = book['alpha=' + str(alpha)]
