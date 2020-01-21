@@ -19,7 +19,7 @@ def para_calc(file_name,force,num,wing,alpha,clm):
     print('%s:%f' % (force,ave))
 
     #write excel
-    excel_file = 'remove_tank.xlsx'
+    excel_file = 'wing_force.xlsx'
 
     book = openpyxl.load_workbook(excel_file)
     sheet = book['alpha=' + str(alpha)]
@@ -45,11 +45,11 @@ def para_calc(file_name,force,num,wing,alpha,clm):
     #     if force == 'Moment':
     #         sheet.cell(row=16,column=clm).value = ave 
     if force == 'Drag':
-        sheet.cell(row=14,column=clm).value = ave
+        sheet.cell(row=20,column=clm).value = ave
     if force == 'Lift':
-        sheet.cell(row=15,column=clm).value = ave
+        sheet.cell(row=21,column=clm).value = ave
     if force == 'Moment':
-        sheet.cell(row=16,column=clm).value = ave                      
+        sheet.cell(row=22,column=clm).value = ave                      
     book.save(excel_file)
 
 
